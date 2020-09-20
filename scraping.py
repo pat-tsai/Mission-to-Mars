@@ -149,6 +149,7 @@ def hemisphere_info():
         img_url = jpg_links[i]
         hemisphere_info.append({'img_url': img_url, 'title': title})
 
+    browser.quit()
     return hemisphere_info
 
 

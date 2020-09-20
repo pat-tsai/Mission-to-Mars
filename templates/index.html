@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Mission to Mars</title>
+    <title class="bg-info">Mission to Mars</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     />
   </head>
   <body>
-    <div class="container">
+    <section class="text-body !important mw-100 bg-primary">
       <!-- Add Jumbotron to Header -->
-      <div class="jumbotron text-center">
+      <div class="jumbotron text-center" style="background-color:#778899">
         <h1>Mission to Mars</h1>
         <!-- Add a button to activate scraping script -->
-        <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+        <p><a class="btn btn-primary btn-lg .active" href="/scrape" role="button">Scrape New Data</a></p>
       </div>
 
       <!-- Add section for Mars News -->
@@ -45,12 +45,12 @@
           />
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4" style="background-color:#FFFFFF !important">
           <!-- Mars Facts -->
-          <div class="row" id="mars-facts">
+          <section class="text-success !important" style="background-color:#FFFFFF !important" id="mars-facts">
             <h4>Mars Facts</h4>
             {{ mars.facts | safe }}
-          </div>
+          </section>
         </div>
       </div>
 
@@ -71,6 +71,6 @@
         </div>
         {% endfor %}
       </div>
-    </div>
+    </section>
   </body>
 </html>
